@@ -48,20 +48,20 @@ class ProductController extends Controller
 
         }
 
-        dd($request->all());
-        // $product = new Product;
-        // $product->name = $request->name;
-        // $product->price = $request->price;
-        // $product->quantity = $request->quantity;
-        // $product->description = $request->description;
-        // $product->image = $imageName;
-        // $product->discount = $request->discount;
-        // $product->save();
-        // $product->category()->attach($request->category);
-        // if($product){
-        //     return redirect('/product')->with('success', 'product added successfully.');
-        // }
-        // return back()->with('error', 'Failed to add product.');
+        // dd($request->all());
+        $product = new Product;
+        $product->name = $request->name;
+        $product->price = $request->price;
+        $product->quantity = $request->quantity;
+        $product->description = $request->description;
+        $product->image = $imageName;
+        $product->discount = $request->discount;
+        $product->save();
+        $product->category()->attach($request->category);
+        if($product){
+            return redirect('/product')->with('success', 'product added successfully.');
+        }
+        return back()->with('error', 'Failed to add product.');
 
 
     }
