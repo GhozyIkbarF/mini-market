@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Intervention\Image\Facades\Image as ResizeImage;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
