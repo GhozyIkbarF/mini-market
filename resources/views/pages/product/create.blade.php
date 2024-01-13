@@ -4,6 +4,7 @@
             <form action="{{ route('product.store') }}" method="POST" enctype="multipart/form-data"
                 class="w-full flex flex-col gap-3 items-start p-6 text-gray-900 dark:text-gray-100">
                 @csrf
+                <h1>Tambah Product</h1>
                 <div class="w-full">
                     <x-input-label for="name" :value="__('Name')" />
                     <x-text-input type="text" name="name" id="name" :value="old('name')" class="block mt-1 w-full" placeholder="Product" required />
