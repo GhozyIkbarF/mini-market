@@ -65,7 +65,7 @@
                 <div class="flex justify-between items-center">
                     <input type="text" name="name" id="name" class="border border-gray-400 rounded-lg text-gray-600 h-10 pl-2 pr-8 w-full" placeholder="Category">
                 </div>
-                <div class="flex justify-end mt-4">
+                <div class="flex mt-4">
                     <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                         {{ __('Create') }}
                     </button>
